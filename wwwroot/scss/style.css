@@ -415,9 +415,6 @@ header {
 .container {
   padding: 0;
   max-width: 1560px;
-  /* @media (min-width: 1700px) {
-      max-width: 1560px;
-  }*/
 }
 @media (max-width: 1720px) {
   .container {
@@ -661,53 +658,15 @@ header {
   }
 }
 
-.authorization-block-wrapper {
-  /*  width: 100%;
-  height: 100vh;*/
-  margin: 100px;
-  display: flex;
-}
-
 .body-wrapper {
   background: linear-gradient(119deg, #FFFFFF 0, #B0B0B0 100%);
-  /*width: 100%;
-  //height: 100vh;
-  height: 100%;*/
-  /*min-width: 320px;
-  height: 100vh;
-  margin: 0;*/
-  height: 100%;
+  min-height: 100vh;
 }
 
-.main-wrapper {
-  /* position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100%;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;*/
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100%;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-.main-wrapper::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+.background-autorization {
   background: url(../img/authorization/background.png) no-repeat right bottom;
   background-size: 100%;
-}
-.main-wrapper main {
-  width: 100%;
+  min-height: 100vh;
 }
 
 .entrance-block {
@@ -817,6 +776,7 @@ input {
   text-decoration: none;
   height: 80px;
   margin-top: 30px;
+  border: none;
 }
 .entrance-btn:hover, .entrance-btn:focus {
   color: #fff;
@@ -859,6 +819,7 @@ input {
   padding: 140px 0 140px 140px;
   width: 100%;
   align-self: center;
+  max-width: 580px;
 }
 @media (max-width: 1700px) {
   .quotation-block-wrapper {
@@ -866,4 +827,18 @@ input {
     justify-content: center;
     padding-left: 70px;
   }
+}
+
+.autorization-block-wrapper {
+  display: flex;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.entrance-block {
+  margin-top: auto;
+  margin-bottom: auto;
 }
