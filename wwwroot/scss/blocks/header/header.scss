@@ -5,6 +5,10 @@
     @media(max-width: 1050px) {
         min-height: 970px;
     }
+
+    @media(max-width: 767px) {
+        min-height: 500px;
+    }
 }
 
 .background-header {
@@ -35,6 +39,10 @@
     @media(max-width: 1050px) {
         padding-top: 50px;
     }
+
+    @media(max-width: 767px) {
+        padding-top: 20px;
+    }
 }
 
 .header-top {
@@ -58,8 +66,31 @@
     }
 
     @media(max-width: 767px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+
         img {
-            width: 270px;
+            width: 300px;
+        }
+
+        .header-logo {
+            display: flex;
+            margin-right: auto;
+        }
+
+        .header-two-column {
+            margin-left: auto;
+        }
+
+        .city-block {
+            margin-right: 25px;
+        }
+    }
+
+    @media(max-width: 650px) {
+        img {
+            width: 250px;
         }
     }
 }
@@ -117,6 +148,20 @@
         font-size: 42px;
         line-height: 38px;
     }
+
+    @media(max-width: 767px) {
+        font-size: 28px;
+        line-height: 30px;
+        max-width: 350px;
+        padding-top: 70px;
+        padding-bottom: 120px;
+    }
+
+    @media(max-width: 650px) {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 230px;
+    }
 }
 
 .header-content {
@@ -156,17 +201,37 @@
     display: flex;
     flex-direction: column;
 
+    @media(max-width: 650px) {
+        margin-top: 40px;
+    }
+
     .header-contacts-phone {
         font-size: 36px;
         line-height: 46px;
         letter-spacing: .05em;
         font-weight: 400;
         margin-bottom: 10px;
+
+        @media(max-width: 767px) {
+            font-size: 30px;
+            line-height: 32px;
+            margin-bottom: 5px;
+        }
+
+        @media(max-width: 767px) {
+            font-size: 22px;
+            line-height: 22px;
+        }
     }
 
     .header-contacts-address {
         font-size: 20px;
         line-height: 20px;
         font-weight: 500;
+
+        @media(max-width: 767px) {
+            font-size: 18px;
+            line-height: 18px;
+        }
     }
 }
