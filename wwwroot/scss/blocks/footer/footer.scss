@@ -1,0 +1,26 @@
+﻿.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $third-text-color;
+    text-transform: uppercase;
+    margin-bottom: 120px;
+
+    a {
+        color: $third-text-color;
+
+        &:hover, &:focus {
+            color: $secondary-text-color;
+        }
+    }
+
+    @media(max-width: 950px) {
+        font-size: 14px;
+    }
+}
+
+.footer-logo {
+    @media(max-width: 950px) {
+        width: 200px;
+    }
+}

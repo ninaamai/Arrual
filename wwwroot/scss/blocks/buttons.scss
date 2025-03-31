@@ -1,0 +1,24 @@
+﻿.primary-btn {
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 4px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: $primary-background-btn;
+    line-height: 12px;
+    display: flex;
+    text-decoration: none;
+    color: $primary-text-color;
+
+    &:hover, &:focus {
+        background-color: $primary-background-color;
+        color: $color-white-text;
+    }
+
+    @media(max-width: 767px) {
+        padding: 15px 25px;
+    }
+}

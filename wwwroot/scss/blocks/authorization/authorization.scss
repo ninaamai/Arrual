@@ -1,0 +1,213 @@
+﻿.authorization-block-wrapper {
+    /*  width: 100%;
+    height: 100vh;*/
+    //padding: 100px;
+    //margin: 225px 140px 0 240px;
+    //margin: 225px 140px 225px 240px;
+    margin: 100px;
+    display: flex;
+    //height: 100%;
+}
+
+.body-wrapper {
+    background: linear-gradient(119deg,#FFFFFF 0,#B0B0B0 100%);
+    /*width: 100%;
+    //height: 100vh;
+    height: 100%;*/
+    /*min-width: 320px;
+    height: 100vh;
+    margin: 0;*/
+    height: 100%;
+}
+
+.main-wrapper {
+    /* position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;*/
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: url(../img/authorization/background.png) no-repeat right bottom;
+        background-size: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+.entrance-block {
+    width: 580px;
+    height: 630px;
+    background-color: $secondary-background;
+    border-radius: 4px;
+    padding: 60px;
+
+    .logo-img {
+        margin-bottom: 30px;
+    }
+}
+
+input {
+    outline: none;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.main-label {
+    color: $gray-text-color;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    border: 3px solid $primary-border-color;
+    border-radius: 4px;
+    padding: 34px 30px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    height: 80px;
+
+    &:hover, &:focus {
+        border-color: $secondary-border-color;
+    }
+}
+
+.main-checkbox input:checked + .main-checkbox-text::after {
+    background: #fff url(../img/authorization/flag.svg) no-repeat center;
+}
+
+.main-checkbox-text.left::after {
+    top: 0;
+    left: 0;
+}
+
+.main-checkbox-text {
+    padding-left: 40px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-checkbox-text::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 0.125rem solid $primary-border-color;
+    border-radius: 0.25rem;
+    background-color: $secondary-background;
+}
+
+.checkbox-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-btn {
+    color: $secondary-text-color;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: none;
+
+
+    &:hover, &:focus {
+        cursor: pointer;
+        color: $third-text-color;
+    }
+}
+
+.entrance-btn {
+    display: flex;
+    width: 100%;
+    color: $color-white-text;
+    font-size: 24px;
+    line-height: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: $primary-background-color;
+    padding: 34px;
+    justify-content: center;
+    text-decoration: none;
+    height: 80px;
+    margin-top: 30px;
+
+    &:hover, &:focus {
+        color: $color-white-text;
+        cursor: pointer;
+        background-color: $hover-background-btn;
+    }
+}
+
+.quotation-text {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.quotation-author {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.quotation-block {
+    display: flex;
+    flex-direction: column;
+}
+.entrance-block-wrapper {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 125px;
+    margin-bottom: 125px;
+
+    @media(max-width: 1700px) {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+.quotation-block-wrapper {
+    padding: 140px 0 140px 140px;
+    width: 100%;
+    align-self: center;
+
+    @media(max-width: 1700px) {
+        display: flex;
+        justify-content: center;
+        padding-left: 70px;
+    }
+}
