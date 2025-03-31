@@ -485,6 +485,7 @@ header {
   text-transform: uppercase;
   width: 100%;
   align-self: center;
+  font-weight: 500;
 }
 @media (max-width: 1580px) {
   .description-item span {
