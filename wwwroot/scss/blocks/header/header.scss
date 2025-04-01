@@ -175,6 +175,11 @@
         line-height: 24px;
         max-width: 230px;
     }
+
+    @media(max-width: 375px) {
+        font-size: 17px;
+        line-height: 18px;
+    }
 }
 
 .header-content {
@@ -226,6 +231,10 @@
 
     @media(max-width: 650px) {
         margin-top: 40px;
+    }
+
+    @media(max-width: 375px) {
+        margin-top: 50px;
     }
 
     .header-contacts-phone {

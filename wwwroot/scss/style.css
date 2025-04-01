@@ -428,6 +428,12 @@ header {
     max-width: 230px;
   }
 }
+@media (max-width: 375px) {
+  .header-text-block {
+    font-size: 17px;
+    line-height: 18px;
+  }
+}
 
 .header-content {
   max-width: 1560px;
@@ -484,6 +490,11 @@ header {
 @media (max-width: 650px) {
   .header-contacts-block {
     margin-top: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .header-contacts-block {
+    margin-top: 50px;
   }
 }
 .header-contacts-block .header-contacts-phone {
