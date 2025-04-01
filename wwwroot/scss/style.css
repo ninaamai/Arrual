@@ -233,12 +233,12 @@ body div {
 @media (max-width: 767px) {
   .primary-btn {
     padding: 15px 25px;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 430px) {
   .primary-btn {
-    font-size: 16px;
+    padding: 12px 25px;
   }
 }
 
@@ -330,6 +330,13 @@ header {
   .header-top .header-two-column {
     margin-left: auto;
   }
+}
+@media (max-width: 767px) and (max-width: 430px) {
+  .header-top .header-two-column {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
   .header-top .city-block {
     margin-right: 25px;
   }
@@ -337,6 +344,12 @@ header {
 @media (max-width: 650px) {
   .header-top img {
     width: 250px;
+  }
+}
+@media (max-width: 375px) {
+  .header-top {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -362,6 +375,11 @@ header {
 }
 .city-block svg {
   margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .city-block svg {
+    margin-right: 5px;
+  }
 }
 
 .header-text-block {
@@ -446,6 +464,18 @@ header {
     padding-right: 30px;
   }
 }
+@media (max-width: 430px) {
+  .header-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .header-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .header-contacts-block {
   display: flex;
@@ -519,6 +549,18 @@ header {
     padding-right: 30px;
   }
 }
+@media (max-width: 430px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .section-description {
   margin-top: 70px;
@@ -581,6 +623,11 @@ header {
     line-height: 20px;
   }
 }
+@media (max-width: 430px) {
+  .description-item span {
+    padding: 0 0 0 15px;
+  }
+}
 @media (max-width: 1050px) {
   .description-item {
     margin-bottom: 30px;
@@ -606,11 +653,23 @@ header {
 .logo-project-item svg {
   object-fit: cover;
 }
+@media (max-width: 430px) {
+  .logo-project-item svg {
+    width: 35px;
+  }
+}
 @media (max-width: 650px) {
   .logo-project-item {
     width: 90px;
     height: 90px;
     min-width: 90px;
+  }
+}
+@media (max-width: 430px) {
+  .logo-project-item {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
   }
 }
 
@@ -629,11 +688,25 @@ header {
     margin-top: 20px;
   }
 }
+@media (max-width: 430px) {
+  .section-statistics {
+    flex-wrap: wrap;
+  }
+}
 
 .statistic-item {
   display: flex;
   flex-direction: column;
   width: calc(50% - 15px);
+}
+@media (max-width: 430px) {
+  .statistic-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .statistic-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .statictic-number {
@@ -731,6 +804,13 @@ header {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 510px) {
+  .section-projects-company h1 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+}
 
 .projects-company-list {
   display: flex;
@@ -767,6 +847,16 @@ header {
   box-shadow: 0 10px 50px rgba(0, 165, 225, 0.25);
   border-radius: 4px;
   overflow: hidden;
+}
+@media (max-width: 510px) {
+  .projects-company-item {
+    width: 280px;
+    height: 280px;
+  }
+  .projects-company-item img {
+    width: 280px;
+    height: 280px;
+  }
 }
 .projects-company-item span {
   position: absolute;
