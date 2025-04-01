@@ -439,9 +439,6 @@ header {
   max-width: 1560px;
   margin-right: auto;
   margin-left: auto;
-  /* @media (max-width: 1400px) {
-      max-width: 1320px;
-  }*/
 }
 @media (max-width: 1720px) {
   .header-content {
@@ -951,13 +948,20 @@ header {
 
 .entrance-block {
   width: 580px;
-  height: 630px;
+  height: auto;
   background-color: #fff;
   border-radius: 4px;
   padding: 60px;
+  min-width: 450px;
 }
 .entrance-block .logo-img {
   margin-bottom: 30px;
+}
+@media (max-width: 470px) {
+  .entrance-block .logo-img {
+    width: 170px;
+    margin-bottom: 10px;
+  }
 }
 
 input {
@@ -969,11 +973,27 @@ input {
   flex-direction: column;
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .form-field {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .form-field {
+    margin-bottom: 10px;
+  }
+}
 
 .main-label {
   color: #9C9C9C;
   font-size: 18px;
   margin-bottom: 10px;
+}
+@media (max-width: 375px) {
+  .main-label {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
 }
 
 .form-input {
@@ -988,6 +1008,13 @@ input {
 .form-input:hover, .form-input:focus {
   border-color: #00A5E1;
 }
+@media (max-width: 650px) {
+  .form-input {
+    padding: 10px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
 
 .main-checkbox input:checked + .main-checkbox-text::after {
   background: #fff url(../img/authorization/flag.svg) no-repeat center;
@@ -1000,6 +1027,14 @@ input {
 
 .main-checkbox-text {
   padding-left: 40px;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 375px) {
+  .main-checkbox-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .visually-hidden {
@@ -1028,6 +1063,21 @@ input {
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .checkbox-block {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 470px) {
+  .checkbox-block {
+    flex-direction: column;
+  }
+}
+@media (max-width: 375px) {
+  .checkbox-block {
+    margin-top: 15px;
+  }
 }
 
 .registration-btn {
@@ -1063,6 +1113,13 @@ input {
   cursor: pointer;
   background-color: #03afee;
 }
+@media (max-width: 650px) {
+  .entrance-btn {
+    height: 50px;
+    padding: 17px 15px;
+    font-size: 22px;
+  }
+}
 
 .quotation-text {
   font-size: 24px;
@@ -1070,6 +1127,11 @@ input {
   text-transform: uppercase;
   font-weight: 500;
   word-wrap: break-word;
+}
+@media (max-width: 650px) {
+  .quotation-text {
+    font-size: 20px;
+  }
 }
 
 .quotation-author {
@@ -1108,6 +1170,31 @@ input {
     padding-left: 70px;
   }
 }
+@media (max-width: 1200px) {
+  .quotation-block-wrapper {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .quotation-block-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: none;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 650px) {
+  .quotation-block-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .quotation-block-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .autorization-block-wrapper {
   display: flex;
@@ -1116,9 +1203,83 @@ input {
   margin-right: auto;
   justify-content: space-between;
   min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1600px) {
+  .autorization-block-wrapper {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .autorization-block-wrapper {
+    padding: 50px;
+  }
+}
+@media (max-width: 1023px) {
+  .autorization-block-wrapper {
+    flex-direction: column;
+    padding-top: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .autorization-block-wrapper {
+    padding: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .autorization-block-wrapper {
+    justify-content: flex-start;
+  }
 }
 
 .entrance-block {
   margin-top: auto;
   margin-bottom: auto;
+}
+@media (max-width: 1023px) {
+  .entrance-block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 767px) {
+  .entrance-block {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .entrance-block {
+    padding: 30px;
+    min-width: 260px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 470px) {
+  .entrance-block .main-checkbox {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .entrance-block {
+    padding: 20px;
+  }
+}
+
+.error-form .error-text {
+  display: flex !important;
+  font-size: 18px;
+  color: #E10026;
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+  .error-form .error-text {
+    font-size: 16px;
+  }
+}
+
+.error-text {
+  display: none;
 }

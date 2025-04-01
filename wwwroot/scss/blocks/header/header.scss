@@ -183,8 +183,6 @@
 }
 
 .header-content {
-    //padding-left: 100px;
-    //padding: 220px 0 120px 100px;
     max-width: 1560px;
     margin-right: auto;
     margin-left: auto;
@@ -196,9 +194,6 @@
     @media (max-width: 1580px) {
         max-width: 1200px;
     }
-    /* @media (max-width: 1400px) {
-        max-width: 1320px;
-    }*/
 
     @media(max-width: 1260px) {
         max-width: 1050px;
