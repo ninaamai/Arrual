@@ -1,0 +1,53 @@
+﻿.section-projects {
+    margin-top: 80px;
+}
+
+.project-card {
+    width: 22%;
+    min-height: 145px;
+    background-color: $secondary-background;
+    color: $primary-text-color;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 50px rgba(0, 165, 225, .25);
+    border-radius: 4px;
+    overflow: hidden;
+
+    b {
+        font-size: 22px;
+    }
+
+    &:hover, &:focus {
+        color: $primary-text-color;
+    }
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+    margin-bottom: 100px;
+}
+
+.add-project {
+    background-image: url(../img/add-icon.svg);
+    background-position: left 20px bottom 70%;
+    background-size: 12%;
+    background-repeat: no-repeat;
+    padding-top: 90px;
+    font-size: 20px;
+    color: $secondary-text-color;
+
+    &:hover, &:focus {
+        color: $secondary-text-color;
+    }
+}
+
+.block-title {
+    margin: 0 0 2rem 2rem;
+    font-size: 34px;
+    font-weight: 900;
+    color: $primary-text-color;
+}
