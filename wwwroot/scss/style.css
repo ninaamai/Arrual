@@ -1315,51 +1315,55 @@ input {
   margin-top: 80px;
 }
 
-.project-card {
-  width: 22%;
-  min-height: 145px;
-  background-color: #fff;
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 20px;
-  margin: 20px;
-  box-shadow: 0 10px 50px rgba(0, 165, 225, 0.25);
-  border-radius: 4px;
-  overflow: hidden;
+.container-projects {
+  margin-top: 80px;
+  padding: 0 80px;
+  margin-left: 0;
+  margin-right: 0;
 }
-.project-card b {
-  font-size: 22px;
+
+.section-projects {
+  margin: 0 auto;
+  max-width: 1560px;
 }
-.project-card:hover, .project-card:focus {
-  color: #000000;
+.section-projects .block-title {
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.section-projects .projects-list-text {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -20px;
-  margin-bottom: 100px;
+  margin: 15px -15px 0 -15px;
 }
 
-.add-project {
-  background-image: url(../img/add-icon.svg);
-  background-position: left 20px bottom 70%;
-  background-size: 12%;
-  background-repeat: no-repeat;
-  padding-top: 90px;
-  font-size: 20px;
-  color: #00A5E1;
+.project-card {
+  border-radius: 4px;
+  padding: 40px 50px;
+  min-width: 300px;
+  text-decoration: none;
+  margin: 15px;
+  width: calc(32% - 9px);
 }
-.add-project:hover, .add-project:focus {
-  color: #00A5E1;
-}
-
-.block-title {
-  margin: 0 0 2rem 2rem;
-  font-size: 34px;
-  font-weight: 900;
+.project-card .city-name {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
   color: #000000;
+  margin-left: 40px;
+}
+.project-card:hover, .project-card:focus {
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .change-project-card {
