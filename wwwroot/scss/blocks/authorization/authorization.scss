@@ -137,7 +137,7 @@ input {
     }
 }
 
-.registration-btn {
+.registration-btn, .forgot-password-btn, .login-as-guest-btn {
     color: $secondary-text-color;
     font-size: 20px;
     line-height: 20px;
@@ -147,6 +147,32 @@ input {
     &:hover, &:focus {
         cursor: pointer;
         color: $third-text-color;
+    }
+}
+
+.login-as-guest-btn {
+    @media(max-width: 450px) {
+        margin-bottom: 20px;
+    }
+
+    svg {
+        margin-right: 10px;
+    }
+
+    &:hover, &:focus {
+        .fill-icon {
+            fill: $third-text-color;
+        }
+    }
+}
+
+.entry-method-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    @media(max-width: 450px) {
+        flex-direction: column;
     }
 }
 
@@ -262,13 +288,13 @@ input {
         padding-left: 100px;
     }
 
-    @media(max-width: 1200px) {
-        padding: 50px;
-    }
-
-    @media(max-width: 1023px) {
+    @media(max-width: 1250px) {
         flex-direction: column;
         padding-top: 90px;
+    }
+
+    @media(max-width: 1200px) {
+        padding: 50px;
     }
 
     @media(max-width: 767px) {

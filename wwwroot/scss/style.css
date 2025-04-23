@@ -1080,16 +1080,39 @@ input {
   }
 }
 
-.registration-btn {
+.registration-btn, .forgot-password-btn, .login-as-guest-btn {
   color: #00A5E1;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   text-decoration: none;
 }
-.registration-btn:hover, .registration-btn:focus {
+.registration-btn:hover, .registration-btn:focus, .forgot-password-btn:hover, .forgot-password-btn:focus, .login-as-guest-btn:hover, .login-as-guest-btn:focus {
   cursor: pointer;
   color: #B3B3B3;
+}
+
+@media (max-width: 450px) {
+  .login-as-guest-btn {
+    margin-bottom: 20px;
+  }
+}
+.login-as-guest-btn svg {
+  margin-right: 10px;
+}
+.login-as-guest-btn:hover .fill-icon, .login-as-guest-btn:focus .fill-icon {
+  fill: #B3B3B3;
+}
+
+.entry-method-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media (max-width: 450px) {
+  .entry-method-block {
+    flex-direction: column;
+  }
 }
 
 .entrance-btn {
@@ -1212,15 +1235,15 @@ input {
     padding-left: 100px;
   }
 }
-@media (max-width: 1200px) {
-  .autorization-block-wrapper {
-    padding: 50px;
-  }
-}
-@media (max-width: 1023px) {
+@media (max-width: 1250px) {
   .autorization-block-wrapper {
     flex-direction: column;
     padding-top: 90px;
+  }
+}
+@media (max-width: 1200px) {
+  .autorization-block-wrapper {
+    padding: 50px;
   }
 }
 @media (max-width: 767px) {
