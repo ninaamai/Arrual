@@ -242,17 +242,17 @@ body div {
   }
 }
 
-header {
+.header-index {
   position: relative;
   min-height: 1080px;
 }
 @media (max-width: 1050px) {
-  header {
+  .header-index {
     min-height: 970px;
   }
 }
 @media (max-width: 767px) {
-  header {
+  .header-index {
     min-height: 500px;
   }
 }
@@ -526,6 +526,41 @@ header {
   }
 }
 
+.profile-block {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 40px;
+}
+@media (max-width: 767px) {
+  .profile-block {
+    font-size: 16px;
+  }
+}
+.profile-block a {
+  text-decoration: none;
+  color: #000000;
+}
+.profile-block a:hover, .profile-block a:focus {
+  cursor: pointer;
+  color: #000000;
+}
+.profile-block svg {
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .profile-block svg {
+    margin-right: 5px;
+  }
+}
+
+.logout-btn {
+  border: 3px solid #DEDEDE;
+  padding: 10px;
+  height: 56px;
+  width: 56px;
+}
 .container {
   padding: 0;
   max-width: 1560px;

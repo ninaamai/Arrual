@@ -1,4 +1,4 @@
-﻿header {
+﻿.header-index {
     position: relative;
     min-height: 1080px;
 
@@ -261,4 +261,47 @@
             line-height: 18px;
         }
     }
+}
+
+.profile-block {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 40px;
+
+    @media(max-width: 767px) {
+        font-size: 16px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary-text-color;
+
+        &:hover, &:focus {
+            cursor: pointer;
+            color: $primary-text-color;
+        }
+    }
+
+    svg {
+        margin-right: 20px;
+
+        @media(max-width: 767px) {
+            margin-right: 5px;
+        }
+    }
+}
+
+.logout-btn {
+    border: 3px solid $third-border-color;
+    padding: 10px;
+    height: 56px;
+    width: 56px;
+
+    svg {
+    }
+}
+
+.header-profile {
 }
