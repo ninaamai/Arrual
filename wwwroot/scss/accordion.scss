@@ -1,0 +1,33 @@
+﻿.accordion-btn {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 1.125rem;
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: left;
+    word-break: break-word;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid $third-border-color;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.accordion-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -.75rem;
+    background: url(../img/arrow-down.svg) no-repeat center;
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: -webkit-transform .2s ease;
+    -o-transition: transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
+}
