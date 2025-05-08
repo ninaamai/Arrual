@@ -1,9 +1,8 @@
 ﻿.body-main-wrapper {
     background-color: $third-background-color;
 }
-
-.section-projects {
-    margin-top: 80px;
+.main-project-container {
+    max-width: 1760px;
 }
 
 .container-projects {
@@ -16,6 +15,7 @@
 .section-projects {
     margin: 0 auto;
     max-width: 1560px;
+    margin-top: 80px;
 
     .block-title {
         text-transform: uppercase;
