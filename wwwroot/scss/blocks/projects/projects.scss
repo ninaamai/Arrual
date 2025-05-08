@@ -62,7 +62,7 @@
     }
 }
 
-.section-snips-and-standards {
+.section-snips-and-standards, .section-email-template {
     margin: 0 auto;
     max-width: 1560px;
 
@@ -77,7 +77,11 @@
     }
 }
 
-.snip-item {
+.section-email-template {
+    margin-top: 80px;
+}
+
+.snip-item, .email-template-item {
     display: flex;
     padding: 40px 50px;
     color: $primary-text-color;
@@ -98,7 +102,7 @@
     }
 }
 
-.snip-item-text {
+.snip-item-text, .email-template-item-text {
     display: flex;
     flex-direction: column;
     margin-left: 40px;

@@ -933,9 +933,14 @@ body div {
 }
 .footer-block a {
   color: #B3B3B3 !important;
+  font-weight: 700;
+  text-decoration: none;
 }
 .footer-block a:hover, .footer-block a:focus {
   color: #00A5E1 !important;
+}
+.footer-block .footer-city, .footer-block .footer-org-name {
+  font-weight: 700;
 }
 @media (max-width: 1650px) {
   .footer-block {
@@ -951,17 +956,6 @@ body div {
   .footer-block {
     flex-direction: column;
     align-items: flex-start;
-  }
-}
-
-@media (max-width: 950px) {
-  .footer-logo {
-    width: 200px;
-  }
-}
-@media (max-width: 767px) {
-  .footer-logo {
-    margin-bottom: 10px;
   }
 }
 
@@ -1405,20 +1399,24 @@ input {
   cursor: pointer;
 }
 
-.section-snips-and-standards {
+.section-snips-and-standards, .section-email-template {
   margin: 0 auto;
   max-width: 1560px;
 }
-.section-snips-and-standards .accordion-btn {
+.section-snips-and-standards .accordion-btn, .section-email-template .accordion-btn {
   padding: 25px 0;
 }
-.section-snips-and-standards .accordion-panel {
+.section-snips-and-standards .accordion-panel, .section-email-template .accordion-panel {
   display: flex;
   flex-wrap: wrap;
   margin: 30px -15px;
 }
 
-.snip-item {
+.section-email-template {
+  margin-top: 80px;
+}
+
+.snip-item, .email-template-item {
   display: flex;
   padding: 40px 50px;
   color: #000000;
@@ -1427,28 +1425,28 @@ input {
   border-radius: 4px;
   margin: 15px;
 }
-.snip-item:hover, .snip-item:focus {
+.snip-item:hover, .snip-item:focus, .email-template-item:hover, .email-template-item:focus {
   color: #000000;
   background-color: #fff;
   cursor: pointer;
 }
-.snip-item img {
+.snip-item img, .email-template-item img {
   object-fit: contain;
   align-self: center;
 }
 
-.snip-item-text {
+.snip-item-text, .email-template-item-text {
   display: flex;
   flex-direction: column;
   margin-left: 40px;
 }
-.snip-item-text b {
+.snip-item-text b, .email-template-item-text b {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.snip-item-text span {
+.snip-item-text span, .email-template-item-text span {
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
@@ -1521,6 +1519,7 @@ input {
   border-bottom: 3px solid #DEDEDE;
   cursor: pointer;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .accordion-btn::after {

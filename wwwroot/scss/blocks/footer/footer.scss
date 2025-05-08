@@ -8,10 +8,16 @@
 
     a {
         color: $third-text-color !important;
+        font-weight: 700;
+        text-decoration: none;
 
         &:hover, &:focus {
             color: $secondary-text-color !important;
         }
+    }
+
+    .footer-city, .footer-org-name {
+        font-weight: 700;
     }
 
     @media(max-width: 1650px) {
@@ -25,16 +31,6 @@
     @media(max-width: 767px) {
         flex-direction: column;
         align-items: flex-start;
-    }
-}
-
-.footer-logo {
-    @media(max-width: 950px) {
-        width: 200px;
-    }
-
-    @media(max-width: 767px) {
-        margin-bottom: 10px;
     }
 }
 
