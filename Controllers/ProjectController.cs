@@ -12,6 +12,10 @@ namespace Arrual.Controllers
         {
             return View();
         }
+        public IActionResult WorkingProjects()
+        {
+            return View();
+        }
         //public IActionResult Cities()
         //{
         //    return View();

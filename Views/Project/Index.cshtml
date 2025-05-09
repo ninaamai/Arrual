@@ -39,7 +39,7 @@
     <section class="section-snips-and-standards">
         <div class="snips-wrapper">
             <button class="accordion-btn" type="button">Снипы и нормы</button>
-            <div class="accordion-panel">
+            <div class="accordion-panel panel">
                 <a class="snip-item">
                     <img src="~/img/documents/snip.svg" width="40" height="40" />
                     <div class="snip-item-text">
@@ -88,7 +88,7 @@
     <section class="section-email-template">
         <div class="email-template-wrapper">
             <button class="accordion-btn" type="button">Шаблоны писем</button>
-            <div class="accordion-panel">
+            <div class="accordion-panel panel">
                 <a class="email-template-item">
                     <img src="~/img/documents/email.svg" width="40" height="40" />
                     <div class="email-template-item-text">
@@ -135,3 +135,20 @@
         </div>
     </section>
 </div>
+<script>
+    var acc = document.getElementsByClassName("accordion-btn");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
