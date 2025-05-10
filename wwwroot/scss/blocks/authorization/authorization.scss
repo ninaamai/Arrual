@@ -1,21 +1,47 @@
 ﻿.header-registration {
     padding: 70px 80px;
+
+    img {
+        object-fit: contain;
+        align-self: center;
+    }
+
+    @media(max-width: 560px) {
+        padding: 70px 20px;
+
+        img {
+            width: 350px;
+        }
+    }
+
+    @media(max-width: 425px) {
+        padding: 30px 20px;
+
+        img {
+            width: 270px;
+        }
+    }
 }
 
 .body-wrapper {
     background: linear-gradient(119deg,#FFFFFF 0,#B0B0B0 100%);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .background-autorization {
     background: url(../img/authorization/background.png) no-repeat right bottom;
     background-size: 100%;
     min-height: 81.3vh;
+
+    @media(max-width: 767px) {
+        padding-bottom: 80px;
+    }
 }
 
 .entrance-block {
     width: 580px;
-    height: auto;
+    height: max-content;
     background-color: $secondary-background;
     border-radius: 4px;
     padding: 60px;
@@ -38,6 +64,21 @@
     line-height: 40px;
     font-weight: 500;
     margin-bottom: 30px;
+
+    @media(max-width: 1320px) {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    @media(max-width: 767px) {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    @media(max-width: 425px) {
+        font-size: 20px;
+    }
 }
 
 .autorization-logo {
@@ -341,7 +382,7 @@ input {
     @media(max-width: 650px) {
         padding: 30px;
         min-width: 260px;
-        margin-top: 60px;
+        margin-top: 10px;
         margin-bottom: 40px;
     }
 
@@ -383,6 +424,25 @@ input {
     margin-right: auto;
     padding: 60px;
 
+    @media(max-width: 1650px) {
+        width: 95%;
+        padding: 40px;
+    }
+
+    @media(max-width: 650px) {
+        padding: 30px;
+    }
+
+    @media(max-width: 375px) {
+        padding: 20px;
+    }
+
+    .form-field {
+        @media(max-width: 767px) {
+            margin-bottom: 15px;
+        }
+    }
+
     .form-input {
         padding: 18px 30px 18px 13px;
     }
@@ -394,28 +454,79 @@ input {
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 30px;
+
+        @media(max-width: 767px) {
+            font-size: 26px;
+            line-height: 32px;
+            margin-bottom: 15px;
+        }
+
+        @media(max-width: 650px) {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        @media(max-width: 530px) {
+            font-size: 20px;
+            line-height: 22px;
+        }
     }
 
     .container-registartion-block {
         display: flex;
         justify-content: space-between;
+
+        @media(max-width: 1450px) {
+            flex-wrap: wrap;
+        }
     }
 
     .one-block {
         width: 33%;
         margin-right: 15px;
+
+        @media(max-width: 1450px) {
+            width: calc(50% - 15px);
+        }
+
+        @media(max-width: 1025px) {
+            width: 100%;
+            margin: 0;
+        }
     }
 
     .two-block {
         width: 33%;
         margin-right: 15px;
         margin-left: 15px;
+
+        @media(max-width: 1450px) {
+            width: calc(50% - 15px);
+            margin-right: 0;
+        }
+
+        @media(max-width: 1025px) {
+            width: 100%;
+            margin: 0;
+        }
     }
 
     .three-block {
         width: 33%;
         margin-left: 15px;
+
+        @media(max-width: 1450px) {
+            width: calc(50% - 15px);
+            margin-left: 0;
+        }
+
+        @media(max-width: 1025px) {
+            width: 100%;
+            margin: 0;
+        }
     }
+
+
 
     .registration-btn {
         background-color: $primary-background-color;
@@ -428,14 +539,27 @@ input {
             background-color: $hover-background-btn;
             border-color: transparent;
         }
+
+        @media(max-width: 767px) {
+            width: 100%;
+            padding: 20px 25px;
+        }
     }
 
     .btn-block {
         margin-top: 30px;
+
+        @media(max-width: 767px) {
+            margin-top: 15px;
+        }
     }
 
     .form-input.success-login {
         background: url(../img/authorization/success-icon.png) no-repeat right;
         background-position-x: 98%;
+
+        @media(max-width: 767px) {
+            background-size: 25px;
+        }
     }
 }

@@ -17,7 +17,7 @@
 
         .select2-container .select2-selection--single .select2-selection__rendered {
             display: block;
-            padding: 18px 30px 18px 13px;
+            padding: 18px 40px 18px 13px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -204,7 +204,7 @@
     }
 
     .select2-container--default .select2-selection--single .select2-selection__placeholder {
-        color: #999;
+        color: #B3B3B3;
     }
 
     .select2-container--default .select2-selection--single .select2-selection__arrow {
