@@ -10,7 +10,7 @@
 
     .form-input {
         height: 60px;
-        padding: 20px 30px;
+        padding: 18px 20px 18px 20px;
     }
 }
 
@@ -78,6 +78,8 @@
 }
 
 .section-create-project {
+    margin-bottom: 80px;
+
     .block-title {
         font-size: 50px;
         line-height: 40px;
@@ -92,6 +94,9 @@
     border-radius: 4px;
 
     .form-input {
+        padding: 16px 20px 20px 20px;
+        outline: none;
+
         .main-label {
             font-size: 14px;
             line-height: 100%;
@@ -99,9 +104,67 @@
             margin-bottom: 4px;
         }
     }
+
+    .one-column {
+        margin-right: 15px;
+        width: 50%;
+    }
+
+    .two-column {
+        margin-left: 15px;
+        width: 50%;
+    }
+
+    .completed-block {
+        margin-right: 15px;
+        width: 70%;
+    }
+
+    .composition-project-block {
+        margin-left: 15px;
+        width: 30%;
+    }
+
+    .primary-btn {
+        width: 340px;
+        justify-content: center;
+        padding: 34px 30px;
+        font-size: 24px;
+    }
+
+    .cancel-btn {
+        background-color: $third-background-color;
+        color: $secondary-text-color;
+
+        &:hover, &:focus {
+            background-color: $primary-background-color;
+            border-color: transparent;
+            color: $color-white-text;
+        }
+    }
+
+    .add-btn {
+        background-color: $primary-background-color;
+        color: $color-white-text;
+        margin-left: 30px;
+
+        &:hover, &:focus {
+            background-color: $hover-background-btn;
+            border-color: transparent;
+        }
+    }
+
+    .btn-block {
+        margin-top: 30px;
+    }
 }
 
 .name-project-input {
     resize: none;
     overflow: hidden;
+}
+
+.name-project-block {
+    margin-right: 30px;
+    width: 80%;
 }

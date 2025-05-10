@@ -1532,7 +1532,7 @@ input {
 }
 .change-project-card .form-input {
   height: 60px;
-  padding: 20px 30px;
+  padding: 18px 20px 18px 20px;
 }
 
 .button-block {
@@ -1594,6 +1594,9 @@ input {
   width: 48%;
 }
 
+.section-create-project {
+  margin-bottom: 80px;
+}
 .section-create-project .block-title {
   font-size: 50px;
   line-height: 40px;
@@ -1606,16 +1609,68 @@ input {
   background-color: #fff;
   border-radius: 4px;
 }
+.create-project-wrapper .form-input {
+  padding: 16px 20px 20px 20px;
+  outline: none;
+}
 .create-project-wrapper .form-input .main-label {
   font-size: 14px;
   line-height: 100%;
   font-weight: 400;
   margin-bottom: 4px;
 }
+.create-project-wrapper .one-column {
+  margin-right: 15px;
+  width: 50%;
+}
+.create-project-wrapper .two-column {
+  margin-left: 15px;
+  width: 50%;
+}
+.create-project-wrapper .completed-block {
+  margin-right: 15px;
+  width: 70%;
+}
+.create-project-wrapper .composition-project-block {
+  margin-left: 15px;
+  width: 30%;
+}
+.create-project-wrapper .primary-btn {
+  width: 340px;
+  justify-content: center;
+  padding: 34px 30px;
+  font-size: 24px;
+}
+.create-project-wrapper .cancel-btn {
+  background-color: #F1F2F2;
+  color: #00A5E1;
+}
+.create-project-wrapper .cancel-btn:hover, .create-project-wrapper .cancel-btn:focus {
+  background-color: #00A5E1;
+  border-color: transparent;
+  color: #fff;
+}
+.create-project-wrapper .add-btn {
+  background-color: #00A5E1;
+  color: #fff;
+  margin-left: 30px;
+}
+.create-project-wrapper .add-btn:hover, .create-project-wrapper .add-btn:focus {
+  background-color: #03afee;
+  border-color: transparent;
+}
+.create-project-wrapper .btn-block {
+  margin-top: 30px;
+}
 
 .name-project-input {
   resize: none;
   overflow: hidden;
+}
+
+.name-project-block {
+  margin-right: 30px;
+  width: 80%;
 }
 
 .add-project-btn {
