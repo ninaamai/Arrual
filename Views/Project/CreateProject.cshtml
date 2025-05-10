@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Добавить проект";
+}
+<ul class="breadcrumbs">
+    <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
+    <li><a asp-controller="Project" asp-action="WorkingProjects">Рабочие проекты</a></li>
+    <li>
+        <a class="active">@ViewData["Title"]</a>
+    </li>
+</ul>
+
+<div class="container-create-project">
+    <section class="section-create-project">
+        <h1 class="block-title">Добавить проект</h1>
+        <div class="create-project-wrapper">
+            <div>
+                <div class="form-field">
+                    <label class="main-label">Наименование проекта:</label>
+                    <textarea class="form-input name-project-input"></textarea>
+                </div>
+                <div>
+                    <div class="form-field">
+                        <label class="main-label">Шифр:</label>
+                        <input class="form-input" />
+                    </div>
+                    <div class="form-field">
+                        <label class="main-label">Дата:</label>
+                        <input class="form-input" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="form-field">
+                        <label class="main-label">ГИП:</label>
+                        <select class="main-select">
+                            <option selected></option>
+                            <option>Иванов Сергей</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="form-field">
+                            <label class="main-label">Выполнил:</label>
+                            <select class="main-select">
+                                <option selected></option>
+                                <option>Каюмов Рамис</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label class="main-label">Состав проекта:</label>
+                            <select class="main-select">
+                                <option selected></option>
+                                <option>Не выбрано</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label class="main-label">Проверил:</label>
+                        <select class="main-select">
+                            <option selected></option>
+                            <option>Бакиров Денислам</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

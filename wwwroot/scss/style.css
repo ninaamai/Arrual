@@ -1543,27 +1543,47 @@ input {
   margin-right: 15px;
 }
 
-.select2-container .select2-selection--single {
-  height: 60px !important;
+/*.select2-container .select2-selection--single {
+    height: 60px !important;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 40px !important;
-  top: 10px !important;
-  right: 5px !important;
-  width: 40px !important;
+    height: 40px !important;
+    top: 10px !important;
+    right: 5px !important;
+    width: 40px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background: url(../img/arrow-down.svg) no-repeat center;
+    height: 35px !important;
+    width: 35px !important;
+    left: 50%;
+    margin-left: -17.5px !important;
+    margin-top: -17.5px !important;
+    position: absolute;
+    top: 50%;
+    border: none;
+    border-color: transparent !important;
 }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
-  padding: 15px 20px !important;
-  display: flex !important;
+    padding: 15px 20px !important;
+    display: flex !important;
 }
 
 .select2-container--default .select2-selection--single {
-  border: 3px solid #DBDBDB !important;
-  border-radius: 4px !important;
+    border: 3px solid $primary-border-color !important;
+    border-radius: 4px !important;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+}*/
+.select2-container--default .select2-selection--single:hover, .select2-container--default .select2-selection--single:focus {
+  border-color: #00A5E1 !important;
+}
+
+.select2-results__option select2-results__option--highlighted {
   font-size: 24px !important;
-  font-weight: 400 !important;
 }
 
 .sheets-block {
@@ -1572,6 +1592,30 @@ input {
 }
 .sheets-block .form-field {
   width: 48%;
+}
+
+.section-create-project .block-title {
+  font-size: 50px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.create-project-wrapper {
+  padding: 60px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.create-project-wrapper .form-input .main-label {
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.name-project-input {
+  resize: none;
+  overflow: hidden;
 }
 
 .add-project-btn {
@@ -1769,6 +1813,7 @@ ul.breadcrumbs {
 .breadcrumbs li::after {
   content: "/";
   margin: 0 0.25rem;
+  color: #B3B3B3;
 }
 .breadcrumbs li:last-of-type::after {
   content: "";

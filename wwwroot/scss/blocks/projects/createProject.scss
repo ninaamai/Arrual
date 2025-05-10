@@ -1,0 +1,107 @@
+﻿.section-add-project {
+}
+
+.change-project-card {
+    background-color: $secondary-background;
+    box-shadow: 0 10px 50px rgba(0, 165, 225, .25);
+    border-radius: 4px;
+    max-width: 1000px;
+    padding: 30px;
+
+    .form-input {
+        height: 60px;
+        padding: 20px 30px;
+    }
+}
+
+.button-block {
+    display: flex;
+    justify-content: end;
+
+    .create-btn {
+        margin-right: 15px;
+    }
+}
+
+/*.select2-container .select2-selection--single {
+    height: 60px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 40px !important;
+    top: 10px !important;
+    right: 5px !important;
+    width: 40px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background: url(../img/arrow-down.svg) no-repeat center;
+    height: 35px !important;
+    width: 35px !important;
+    left: 50%;
+    margin-left: -17.5px !important;
+    margin-top: -17.5px !important;
+    position: absolute;
+    top: 50%;
+    border: none;
+    border-color: transparent !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 15px 20px !important;
+    display: flex !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 3px solid $primary-border-color !important;
+    border-radius: 4px !important;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+}*/
+.select2-container--default .select2-selection--single {
+    &:hover, &:focus {
+        border-color: $secondary-border-color !important;
+    }
+}
+
+.select2-results__option select2-results__option--highlighted {
+    font-size: 24px !important;
+}
+
+.sheets-block {
+    display: flex;
+    justify-content: space-between;
+
+    .form-field {
+        width: 48%;
+    }
+}
+
+.section-create-project {
+    .block-title {
+        font-size: 50px;
+        line-height: 40px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+
+.create-project-wrapper {
+    padding: 60px;
+    background-color: $secondary-background;
+    border-radius: 4px;
+
+    .form-input {
+        .main-label {
+            font-size: 14px;
+            line-height: 100%;
+            font-weight: 400;
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.name-project-input {
+    resize: none;
+    overflow: hidden;
+}

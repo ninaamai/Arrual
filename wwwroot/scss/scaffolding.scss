@@ -16,6 +16,7 @@ ul.breadcrumbs {
         &::after {
             content: "/";
             margin: 0 0.25rem;
+            color: $third-text-color;
         }
 
         &:last-of-type::after {
