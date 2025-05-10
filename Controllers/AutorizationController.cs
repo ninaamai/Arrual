@@ -8,15 +8,7 @@ namespace Arrual.Controllers
         {
             return View();
         }
-        public IActionResult Cities()
-        {
-            return View();
-        }
-        //public IActionResult Projects()
-        //{
-        //    return View();
-        //}
-        public IActionResult AddProject()
+        public IActionResult Registration()
         {
             return View();
         }

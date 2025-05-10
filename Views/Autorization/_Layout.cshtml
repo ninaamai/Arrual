@@ -14,19 +14,24 @@
 </head>
 
 <body class="body-wrapper">
-
+    <header class="header-registration">
+        <img class="" src="~/img/logo.png" width="395" height="62" />
+    </header>
     @RenderBody()
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link href="~/lib/select2/css/select2.css" rel="stylesheet" asp-append-version="true">
 
+    <script src="~/lib/select2/js/select2.min.js" asp-append-version="true"></script>
+    <script src="~/lib/select2/js/i18n/ru.js" asp-append-version="true"></script>
     <script>
         $(document).ready(function () {
-            $('.select2').select2({
+            $('.main-select').select2({
                 width: '100%',
-                placeholder: '<не выбрано>'
+                placeholder: 'Не выбрано'
             });
         });
     </script>

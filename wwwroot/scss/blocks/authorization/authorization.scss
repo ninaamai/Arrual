@@ -1,4 +1,7 @@
-﻿
+﻿.header-registration {
+    padding: 70px 80px;
+}
+
 .body-wrapper {
     background: linear-gradient(119deg,#FFFFFF 0,#B0B0B0 100%);
     min-height: 100vh;
@@ -7,7 +10,7 @@
 .background-autorization {
     background: url(../img/authorization/background.png) no-repeat right bottom;
     background-size: 100%;
-    min-height: 100vh;
+    min-height: 81.3vh;
 }
 
 .entrance-block {
@@ -294,9 +297,10 @@ input {
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
-    min-height: 100vh;
+    //min-height: 100vh;
     padding-top: 100px;
     padding-bottom: 100px;
+    min-height: 81.3vh;
 
     @media(max-width: 1600px) {
         padding-right: 100px;
@@ -322,8 +326,8 @@ input {
 }
 
 .entrance-block {
-    margin-top: auto;
-    margin-bottom: auto;
+    /* margin-top: auto;
+    margin-bottom: auto;*/
 
     @media(max-width: 1023px) {
         margin-left: auto;
@@ -367,4 +371,71 @@ input {
 
 .error-text {
     display: none;
+}
+
+
+// страница с регистрацией
+.registartion-block-wrapper {
+    background-color: $secondary-background;
+    border-radius: 4px;
+    width: 1560px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+
+    .form-input {
+        padding: 18px 30px 18px 13px;
+    }
+
+    .block-title {
+        line-height: 40px;
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .container-registartion-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .one-block {
+        width: 33%;
+        margin-right: 15px;
+    }
+
+    .two-block {
+        width: 33%;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .three-block {
+        width: 33%;
+        margin-left: 15px;
+    }
+
+    .registration-btn {
+        background-color: $primary-background-color;
+        color: $color-white-text;
+        width: 460px;
+        justify-content: center;
+        font-size: 24px;
+
+        &:hover, &:focus {
+            background-color: $hover-background-btn;
+            border-color: transparent;
+        }
+    }
+
+    .btn-block {
+        margin-top: 30px;
+    }
+
+    .form-input.success-login {
+        background: url(../img/authorization/success-icon.png) no-repeat right;
+        background-position-x: 98%;
+    }
 }
