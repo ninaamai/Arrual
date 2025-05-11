@@ -924,6 +924,35 @@ body div {
   border-radius: 4px;
 }
 
+.section-map-kz {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1023px) {
+  .section-map-kz svg {
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .section-map-kz {
+    margin-top: 40px;
+  }
+  .section-map-kz svg {
+    height: 350px;
+  }
+}
+@media (max-width: 560px) {
+  .section-map-kz svg {
+    height: 300px;
+  }
+}
+@media (max-width: 425px) {
+  .section-map-kz svg {
+    height: 250px;
+  }
+}
+
 .footer-block {
   display: flex;
   align-items: center;
