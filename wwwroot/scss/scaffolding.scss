@@ -10,9 +10,16 @@ ul.breadcrumbs {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 2.7rem 0 2rem 0;
-    padding: 0;
+    padding: 0 80px;
+
+    @media(max-width: 1023px) {
+        padding: 0;
+    }
 
     li {
+        display: flex;
+        margin-bottom: 5px;
+
         &::after {
             content: "/";
             margin: 0 0.25rem;

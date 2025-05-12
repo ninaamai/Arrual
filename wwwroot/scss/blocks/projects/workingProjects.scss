@@ -23,6 +23,11 @@
         }
     }
 
+    @media(max-width: 767px) {
+        margin-top: 30px;
+        margin-left: auto;
+    }
+
     span {
         align-self: center;
         margin-left: 10px;
@@ -32,6 +37,10 @@
 .working-projects-header {
     display: flex;
     justify-content: space-between;
+
+    @media(max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .working-projects-title {
@@ -39,15 +48,35 @@
     line-height: 40px;
     text-transform: uppercase;
     font-weight: 500;
+    align-self: center;
+
+    @media(max-width: 767px) {
+        font-size: 40px;
+        line-height: 30px;
+        width: 100%;
+    }
 }
 
 .container-working-projects {
     margin-top: 30px;
+    padding: 0 80px;
+
+    @media(max-width: 1023px) {
+        padding: 0;
+    }
 }
 
 .working-projects-wrapper {
     display: flex;
     margin-top: 30px;
+
+    @media(max-width: 1279px) {
+        flex-direction: column;
+    }
+
+    @media(max-width: 767px) {
+        margin-top: 15px;
+    }
 
     .left-panel {
         display: flex;
@@ -56,6 +85,21 @@
         min-width: 350px;
         border-right: 1px solid #B3B3B3;
         height: max-content;
+
+        @media(max-width: 1400px) {
+            padding: 30px;
+            min-width: 300px;
+        }
+
+        @media(max-width: 1279px) {
+            border-right: none;
+            border-bottom: 1px solid #B3B3B3;
+            padding: 20px 30px;
+        }
+
+        @media(max-width: 767px) {
+            padding: 20px 0;
+        }
     }
 
     .panel-item {
@@ -71,6 +115,12 @@
         cursor: pointer;
         text-transform: uppercase;
 
+        @media(max-width: 1279px) {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
         &.active {
             color: $primary-text-color;
             font-weight: 800;
@@ -85,6 +135,15 @@
     .right-panel {
         margin-left: 30px;
         width: 100%;
+
+        @media(max-width: 1400px) {
+            margin-left: 20px;
+        }
+
+        @media(max-width: 1279px) {
+            margin-left: 0;
+            margin-top: 30px;
+        }
     }
 }
 
@@ -102,6 +161,15 @@
     width: 100%;
     margin-bottom: 30px;
 
+    @media(max-width: 1400px) {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+
+    @media(max-width: 479px) {
+        flex-direction: column;
+    }
+
     &:hover, &:focus {
         background-color: $secondary-background;
     }
@@ -109,6 +177,13 @@
     img {
         object-fit: contain;
         align-self: center;
+
+        @media(max-width: 479px) {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 15px;
+            margin-right: auto;
+        }
     }
 }
 
@@ -121,16 +196,29 @@
     line-height: 100%;
     font-weight: 400;
 
+    @media(max-width: 1400px) {
+        margin-left: 20px;
+    }
+
+    @media(max-width: 479px) {
+        margin-left: 5px;
+    }
+
     .date-create {
         margin-bottom: 10px;
     }
 
     .working-projects-name {
         font-size: 20px;
-        line-height: 24px;
+        line-height: 30px;
         font-weight: 500;
         text-transform: uppercase;
         margin-bottom: 10px;
+
+        @media(max-width: 479px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
 
     .performed-name {

@@ -23,41 +23,6 @@
     }
 }
 
-/*.select2-container .select2-selection--single {
-    height: 60px !important;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 40px !important;
-    top: 10px !important;
-    right: 5px !important;
-    width: 40px !important;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-    background: url(../img/arrow-down.svg) no-repeat center;
-    height: 35px !important;
-    width: 35px !important;
-    left: 50%;
-    margin-left: -17.5px !important;
-    margin-top: -17.5px !important;
-    position: absolute;
-    top: 50%;
-    border: none;
-    border-color: transparent !important;
-}
-
-.select2-container .select2-selection--single .select2-selection__rendered {
-    padding: 15px 20px !important;
-    display: flex !important;
-}
-
-.select2-container--default .select2-selection--single {
-    border: 3px solid $primary-border-color !important;
-    border-radius: 4px !important;
-    font-size: 24px !important;
-    font-weight: 400 !important;
-}*/
 .select2-container--default .select2-selection--single {
     &:hover, &:focus {
         border-color: $secondary-border-color !important;
@@ -79,12 +44,32 @@
 
 .section-create-project {
     margin-bottom: 80px;
+    padding: 0 80px;
+
+    @media(max-width: 1023px) {
+        padding: 0;
+    }
 
     .block-title {
         font-size: 50px;
         line-height: 40px;
         text-transform: uppercase;
         font-weight: 500;
+
+        @media(max-width: 767px) {
+            font-size: 40px;
+            line-height: 35px;
+        }
+
+        @media(max-width: 560px) {
+            font-size: 34px;
+            line-height: 24px;
+        }
+
+        @media(max-width: 450px) {
+            font-size: 24px;
+            line-height: 20px;
+        }
     }
 }
 
@@ -92,6 +77,23 @@
     padding: 60px;
     background-color: $secondary-background;
     border-radius: 4px;
+
+    @media(max-width: 1200px) {
+        padding: 40px;
+    }
+
+    @media(max-width: 767px) {
+        padding: 30px;
+        margin-top: 40px;
+
+        .form-field {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media(max-width: 479px) {
+        padding: 20px;
+    }
 
     .form-input {
         padding: 16px 20px 20px 20px;
@@ -108,21 +110,41 @@
     .one-column {
         margin-right: 15px;
         width: 50%;
+
+        @media(max-width: 1600px) {
+            margin-right: 0;
+            width: 100%;
+        }
     }
 
     .two-column {
         margin-left: 15px;
         width: 50%;
+
+        @media(max-width: 1600px) {
+            margin-left: 0;
+            width: 100%;
+        }
     }
 
     .completed-block {
         margin-right: 15px;
         width: 70%;
+
+        @media(max-width: 800px) {
+            margin-right: 0;
+            width: 100%;
+        }
     }
 
     .composition-project-block {
         margin-left: 15px;
         width: 30%;
+
+        @media(max-width: 800px) {
+            margin-left: 0;
+            width: 100%;
+        }
     }
 
     .primary-btn {
@@ -156,6 +178,24 @@
 
     .btn-block {
         margin-top: 30px;
+
+        @media(max-width: 650px) {
+            flex-direction: column;
+            margin-top: 15px;
+
+            button {
+                width: 100%;
+                padding: 25px 30px;
+            }
+
+            .cancel-btn {
+                margin-bottom: 20px;
+            }
+
+            .add-btn {
+                margin-left: 0;
+            }
+        }
     }
 }
 
@@ -167,4 +207,31 @@
 .name-project-block {
     margin-right: 30px;
     width: 80%;
+}
+
+.create-project-column-wrapper {
+    @media(max-width: 1600px) {
+        flex-direction: column;
+
+        .two-column {
+            margin-left: 0;
+        }
+    }
+}
+
+.name-project-column-wrapper {
+    @media(max-width: 1600px) {
+        flex-direction: column;
+
+        .name-project-block {
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+}
+
+.completed-block-wrapper {
+    @media(max-width: 800px) {
+        flex-direction: column;
+    }
 }

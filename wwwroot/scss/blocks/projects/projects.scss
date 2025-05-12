@@ -116,6 +116,7 @@
     margin: 15px;
     width: calc(32% - 9px);
 
+
     @media(max-width: 1750px) {
         width: calc(30% - 10px);
     }
@@ -146,9 +147,9 @@
         margin-left: 40px;
 
         @media(max-width: 425px) {
-            margin-left: 30px;
-            font-size: 22px;
-            line-height: 22px;
+            margin-left: 20px;
+            font-size: 20px;
+            line-height: 20px;
         }
     }
 
@@ -156,24 +157,56 @@
         background-color: $secondary-background;
         cursor: pointer;
     }
+
+    img {
+        object-fit: contain;
+        align-self: center;
+
+        @media(max-width: 425px) {
+            width: 60px;
+            height: 60px;
+        }
+    }
 }
 
 .section-snips-and-standards {
     margin-top: 80px !important;
+
+    @media(max-width: 767px) {
+        margin-top: 40px !important;
+    }
 }
 
 .section-snips-and-standards, .section-email-template {
     margin: 0 auto;
     max-width: 1560px;
 
+    @media(max-width: 767px) {
+        margin-top: 40px !important;
+    }
+
     .accordion-btn {
         padding: 25px 0;
+
+        @media(max-width: 650px) {
+            font-size: 25px;
+            padding: 20px 0;
+        }
+
+        @media(max-width: 375px) {
+            font-size: 22px;
+            padding: 15px 0;
+        }
     }
 
     .accordion-panel {
         display: flex;
         flex-wrap: wrap;
         margin: 30px -15px;
+
+        @media(max-width: 650px) {
+            margin-top: 15px;
+        }
     }
 }
 
@@ -206,6 +239,10 @@
         padding: 20px;
     }
 
+    @media(max-width: 375px) {
+        padding: 15px;
+    }
+
     &:hover, &:focus {
         color: $primary-text-color;
         background-color: $secondary-background;
@@ -215,6 +252,11 @@
     img {
         object-fit: contain;
         align-self: center;
+
+        @media(max-width: 767px) {
+            width: 32px;
+            height: 32px;
+        }
     }
 }
 
@@ -227,16 +269,35 @@
         margin-left: 25px;
     }
 
+    @media(max-width: 650px) {
+        margin-left: 15px;
+    }
+
+    @media(max-width: 375px) {
+        margin-left: 10px;
+    }
+
     b {
         font-size: 24px;
         line-height: 24px;
         text-transform: uppercase;
         margin-bottom: 10px;
+
+        @media(max-width: 650px) {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
     }
 
     span {
         font-size: 18px;
         line-height: 18px;
         font-weight: 400;
+
+        @media(max-width: 425px) {
+            font-size: 16px;
+            line-height: 16px;
+        }
     }
 }
