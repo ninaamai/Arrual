@@ -82,13 +82,13 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px; /* ширина для вертикального скролла */
-    background-color: white;
+    /*width: 10px;*/ /* ширина для вертикального скролла */
+    /*background-color: white;*/
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #00A5E1 !important;
-    border-radius: 2px;
+    /*background-color: #00A5E1 !important;*/
+    /*border-radius: 2px;*/
 }
 
 .select2-results {

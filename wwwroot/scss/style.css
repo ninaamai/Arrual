@@ -561,6 +561,7 @@ body div {
   padding: 10px;
   height: 56px;
   width: 56px;
+  cursor: pointer;
 }
 .container {
   padding: 0;
@@ -1304,10 +1305,10 @@ input {
 }
 
 .quotation-block-wrapper {
-  padding: 140px 0 140px 140px;
+  padding: 0 0 0 140px;
   width: 100%;
   align-self: center;
-  max-width: 580px;
+  max-width: 800px;
 }
 @media (max-width: 1700px) {
   .quotation-block-wrapper {
